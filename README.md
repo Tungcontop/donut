@@ -1,4 +1,4 @@
-# Donut Pay Tracker (Fabric, Minecraft 1.21.4, client-side)
+# Donut Pay Tracker (Fabric, Minecraft 26.2, client-side)
 
 Lists incoming `<name> paid you $<amount>` chat messages in a HUD. Open chat (T / Enter)
 and click WIN / LOSE / SKIP to mark the current payment with a check, an X, or a dash.
@@ -7,11 +7,12 @@ and click WIN / LOSE / SKIP to mark the current payment with a check, an X, or a
 It only reads chat and draws on your own screen. It never sends commands or payments.
 
 ## Build
-1. Install JDK 21.
-2. In this folder run `gradle wrapper --gradle-version 8.11.1` once (needs Gradle installed),
-   or copy `src/` and `fabric.mod.json` into the official Fabric example mod template.
-3. `./gradlew build` -> jar is in `build/libs/donut-pay-tracker-1.0.0.jar`
-4. Put the jar in your `mods` folder next to Fabric API for 1.21.4.
+1. Install JDK 25 (26.x needs Java 25).
+2. In this folder run `./gradlew build` (`gradlew.bat build` on Windows). The Gradle wrapper is included.
+3. The jar is in `build/libs/` (use the one without `-sources`).
+4. Put it in your `mods` folder with Fabric Loader 0.20.1+ and Fabric API 0.161.0+26.2.
+
+Versions are set in `gradle.properties` (copied from the official Fabric example mod for 26.2).
 
 ## Try it without the server
 `/donutpay test 25.1M` adds a fake payment. `/donutpay clear` empties the list.
