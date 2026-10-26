@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "donutpaytracker",
+  "version": "${version}",
+  "name": "Donut Pay Tracker",
+  "description": "Client-side HUD that lists recent incoming payments and lets you mark each one with a check, an X, or skip it.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.donutpay.DonutPayClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
